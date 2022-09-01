@@ -8,6 +8,7 @@ import { NovaTransferenciaComponent } from './nova-transferencia/nova-transferen
 import { ExtratoComponent } from './extrato/extrato.component';
 import { registerLocaleData } from '@angular/common';
 import { DEFAULT_CURRENCY_CODE } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 registerLocaleData(ptBr, 'pr')
 
@@ -20,6 +21,7 @@ registerLocaleData(ptBr, 'pr')
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
   ],
   providers: [
     {provide: LOCALE_ID, useValue:'pr'},
