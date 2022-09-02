@@ -9,6 +9,7 @@ import { ExtratoComponent } from './extrato/extrato.component';
 import { registerLocaleData } from '@angular/common';
 import { DEFAULT_CURRENCY_CODE } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { AppRoutingModule } from './app.routing.modules';
 
 registerLocaleData(ptBr, 'pr')
 
@@ -22,6 +23,7 @@ registerLocaleData(ptBr, 'pr')
     BrowserModule,
     FormsModule,
     HttpClientModule,
+    AppRoutingModule
   ],
   providers: [
     {provide: LOCALE_ID, useValue:'pr'},
